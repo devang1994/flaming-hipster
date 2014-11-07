@@ -1,7 +1,10 @@
 D<-read.csv("train.csv")
-means<- c()
+means<-c()
+for (j in 2:55){
 for(i in 1:7){
-  mean1=
-  means<-c(means,mean(D[D$Cover_Type==i, "Elevation"]))
+  means<-c(means,mean(D[D$Cover_Type==i, j]))
 }
+}
+
+
 
